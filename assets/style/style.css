@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&family=Yellowtail&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Lobster;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(14, 127, 156, 1) 0%,
+    rgba(34, 79, 134, 1) 22%,
+    rgba(51, 75, 168, 1) 35%,
+    rgba(46, 67, 147, 1) 65%,
+    rgba(34, 79, 134, 1) 74%,
+    rgba(14, 127, 156, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn-grad {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+  margin: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 1px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#page-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#page1 {
+  height: 100vh;
+  weight: 100vh;
+}
+
+.page2 {
+  padding: 45vh;
+  height: 100vh;
+  weight: 100vh;
+  background-image: url("./assets/images/tecnology5.webp");
+}
+#page-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page3 {
+  padding: 45vh;
+  height: 100vh;
+  weight: 100vh;
+  background-image: url("./assets/images/tecnology2.webp");
+}
+.proj {
+  display: flex;
+  padding: 40px;
+  border: 2px solid black;
+  box-shadow: 0 0 8px black;
+  flex-wrap: wrap;
+  text-align: start;
+  border-radius: 30px;
+}
+#page-tree {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#titlepage3 {
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.page4 {
+  padding: 45vh;
+  height: 100vh;
+  weight: 100vh;
+  background-image: url("./assets/images/tecnology4.webp");
+}
+
+#page-four {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+#page5 {
+  padding: 45vh;
+  height: 100vh;
+  weight: 100vh;
+  align-items: center;
+  text-align: center;
+  background-image: url("./assets/images/tecnology5.webp");
+}
+
+#page-five {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+
+.links {
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+h1 {
+  color: black;
+  font-size: 2.3rem;
+}
+
+#apresentacao {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+/* #tamanhoapresentacao {
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+} */
+#apresentacao1 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50vh;
+  height: 30vh;
+}
+
+.title-projets {
+  font-size: 1.2rem;
+  color: orange;
+}
+
+#footer {
+  font-size: 1.5rem;
+  color: orange;
+  background-color: black;
+}
+
+/* widht de 918px background image começa quebrar e a lista de projetos fica apertada */
+/* depois de 918px tirar imagens de background, colocar background color para uma cor
+ */
+
+@media screen and (max-device-width: 918px) {
+  .page3 {
+    background-image: none;
+    height: auto;
+  }
+  .page4 {
+    background-image: none;
+  }
+  #page-tree {
+    flex-direction: column;
+  }
+  .page4 {
+    background-image: none;
+  }
+  #page-four {
+    flex-direction: column;
+  }
+  #page5 {
+    background-image: none;
+  }
+}
